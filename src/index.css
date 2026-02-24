@@ -1,0 +1,121 @@
+@font-face{
+  font-family: tajwal;
+  src: url(./assets/fonts/Tajawal-Regular.ttf);
+}
+section{
+    margin-top: 55px;
+}
+
+:root{
+  --main-color:#FF6300;
+  --nav-color:#161616;
+  
+ 
+  --main-font: 'tajwal', sans-serif;
+
+
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.or-color{
+  background-color: var(--main-color) !important;
+}
+
+ *{
+  font-family: var(--main-font);
+}
+
+.ss{
+  width: 60px;
+}
+
+/* grid background */
+
+.hero-grid {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background-color: #0A0A0A; 
+  
+  background-image:
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+
+.blur-bg {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 288px;
+  height: 288px;
+  background-color: rgba(255, 165, 0, 0.2);
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.blur-bg2 {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  width: 384px;
+  height: 384px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-col{
+  background-color: var(--nav-color);
+
+} 
+
+ .nav-link{
+
+  font-weight: 500;
+  font-size: 14px;
+ 
+}
+
+.navbar-nav{
+   border: #3f3f3f 1px solid;
+}
+
+ .nav-item .active{
+  background-color: var(--main-color);
+   
+   border-radius: 20px ;
+   padding: 8px 35px;
+}
+
+.logo{
+  
+   font-weight: 400;
+  font-size: 20px
+}
+.yellow-color{
+  color:#854C0E;
+}
+
+.search-icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ .search-icon:hover {
+  color: #f7c600; 
+  transform: scale(1.1);
+}
+ 
+
